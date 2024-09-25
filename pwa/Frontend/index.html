@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Locação de Veículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Locação de Veículos</h1>
+        <form id="rentalForm">
+            <input 
+                type="text" 
+                id="vehicleId" 
+                placeholder="ID do Veículo" 
+                required 
+            />
+            <input 
+                type="file" 
+                id="image" 
+                accept="image/*" 
+                capture="camera" 
+                required 
+            />
+            <button type="button" id="getLocation">Obter Localização</button>
+            <button type="submit">Registrar Locação</button>
+        </form>
+        <p id="statusMessage"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
